@@ -2,6 +2,7 @@ package asdasd.mjeesh.model.items;
 
 import asdasd.mjeesh.model.BaseEntity;
 import asdasd.mjeesh.model.Role;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -22,5 +23,10 @@ public class Account extends BaseEntity {
     private Role role;
 
     @OneToMany(mappedBy = "account")
-    private List<CartItems> items = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>();
+
+    @JsonManagedReference
+    public List<Order> getOrders() {
+        return orders;
+    }
 }

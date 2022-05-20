@@ -1,10 +1,10 @@
 package asdasd.mjeesh.repository;
 
-import asdasd.mjeesh.model.items.BuyItem;
+import asdasd.mjeesh.model.items.OrderItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface BuyItemRepository extends JpaRepository<BuyItem, Long> {
+public interface BuyItemRepository extends JpaRepository<OrderItem, Long> {
 
     @Override
-    BuyItem getById(Long aLong);
+    OrderItem getById(Long aLong);
 }

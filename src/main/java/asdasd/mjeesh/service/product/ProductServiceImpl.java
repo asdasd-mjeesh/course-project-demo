@@ -1,6 +1,6 @@
 package asdasd.mjeesh.service.product;
 
-import asdasd.mjeesh.model.Product;
+import asdasd.mjeesh.model.items.Product;
 import asdasd.mjeesh.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

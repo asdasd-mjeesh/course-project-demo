@@ -1,6 +1,6 @@
 package asdasd.mjeesh.service.product;
 
-import asdasd.mjeesh.model.Product;
+import asdasd.mjeesh.model.items.Product;
 
 import java.util.List;
 

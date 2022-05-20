@@ -1,5 +1,9 @@
-package asdasd.mjeesh.model;
+package asdasd.mjeesh.model.items;
 
+import asdasd.mjeesh.model.BaseEntity;
+import asdasd.mjeesh.model.ProductSize;
+import asdasd.mjeesh.model.ProductType;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "product")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Product extends BaseEntity {
     @Column(name = "title")
     private String title;

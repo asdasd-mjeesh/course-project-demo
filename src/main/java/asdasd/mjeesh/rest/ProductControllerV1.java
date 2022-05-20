@@ -1,6 +1,6 @@
 package asdasd.mjeesh.rest;
 
-import asdasd.mjeesh.model.Product;
+import asdasd.mjeesh.model.items.Product;
 import asdasd.mjeesh.service.product.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
